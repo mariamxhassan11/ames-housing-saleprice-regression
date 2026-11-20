@@ -1,0 +1,85 @@
+{
+    "project_title": "Ames Housing SalePrice Regression",
+    "task_type": "regression",
+    "target_column": "SalePrice",
+    "best_model_name": "Ridge",
+    "numeric_features": [
+        "OverallQual",
+        "GrLivArea",
+        "GarageCars",
+        "TotalBsmtSF",
+        "YearBuilt",
+        "FullBath",
+        "LotArea"
+    ],
+    "categorical_features": [
+        "Neighborhood",
+        "KitchenQual"
+    ],
+    "feature_ranges": {
+        "OverallQual": {
+            "min": 2,
+            "max": 10,
+            "default": 6,
+            "dtype": "int"
+        },
+        "GrLivArea": {
+            "min": 600,
+            "max": 3800,
+            "default": 2164,
+            "dtype": "int"
+        },
+        "GarageCars": {
+            "min": 0,
+            "max": 4,
+            "default": 2,
+            "dtype": "int"
+        },
+        "TotalBsmtSF": {
+            "min": 0,
+            "max": 2500,
+            "default": 1257,
+            "dtype": "int"
+        },
+        "YearBuilt": {
+            "min": 1920,
+            "max": 2024,
+            "default": 1973,
+            "dtype": "int"
+        },
+        "FullBath": {
+            "min": 1,
+            "max": 4,
+            "default": 2,
+            "dtype": "int"
+        },
+        "LotArea": {
+            "min": 2500,
+            "max": 25000,
+            "default": 13504,
+            "dtype": "int"
+        }
+    },
+    "categorical_options": {
+        "Neighborhood": [
+            "NAmes",
+            "CollgCr",
+            "OldTown",
+            "Edwards",
+            "Somerst",
+            "NridgHt",
+            "Gilbert"
+        ],
+        "KitchenQual": [
+            "Ex",
+            "Gd",
+            "TA",
+            "Fa"
+        ]
+    },
+    "metrics": {
+        "r2": 0.9441,
+        "mae": 27061.4,
+        "rmse": 33722.03
+    }
+}
